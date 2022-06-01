@@ -24,8 +24,8 @@ class Result {
     // Write your code here
     
     int n  = a.size();
-    
-    Map<Integer,Integer> mappp = new HashMap<Integer,Integer>();
+             
+    Map<Integer,Integer> mappp = new HashMap<Integer,Integer>();                   //Creating a Hash Map for counting frequencies of the elements in  the given aray
     
     for(int i=0;i<n;i++)
     {
@@ -41,9 +41,9 @@ class Result {
         }   
     }
     
-    int num  = Integer.MIN_VALUE;
+    int num  = Integer.MIN_VALUE;        //Assing a min value , I want a way so that I can return it without initializing
 
-    for(Map.Entry<Integer,Integer> entry : mappp.entrySet())
+    for(Map.Entry<Integer,Integer> entry : mappp.entrySet())   //Creating Entry set
     {
         if(entry.getValue()==1)
         num  =entry.getKey();
